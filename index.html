@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RPG Department | Government of Rajasthan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+body{font-family:Arial;background:#f5f6fa;}
+
+.header-menu{
+background:linear-gradient(90deg,#b31237,#f0386b);
+}
+
+.header-menu .nav-link{
+color:white!important;
+padding:12px 14px;
+font-size:14px;
+}
+
+.header-menu .dropdown-menu{
+border-radius:0;
+border:none;
+box-shadow:0 3px 10px rgba(0,0,0,.25);
+font-size:13px;
+}
+
+.dropdown:hover>.dropdown-menu{display:block;}
+
+.dropdown-submenu{position:relative;}
+
+.dropdown-submenu>.dropdown-menu{
+top:0;
+left:100%;
+margin-left:0;
+}
+
+.dropdown-item:hover{background:#fdecef;}
+
+.logo_gov{
+display:flex;
+align-items:center;
+color:white;
+font-weight:bold;
+}
+
+.logo_gov img{height:40px;margin-right:10px;}
+
+.quick-card{
+border:1px solid #ddd;
+padding:15px;
+border-radius:6px;
+background:#fff;
+transition:.3s;
+height:100%;
+}
+
+.quick-card:hover{
+box-shadow:0 4px 12px rgba(0,0,0,.2);
+transform:translateY(-4px);
+}
+
+.banner-text{
+position:absolute;
+top:40%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,.6);
+color:white;
+padding:20px;
+border-radius:6px;
+text-align:center;
+}
+
+footer{
+background:#2d2d2d;
+color:white;
+padding:30px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-xl header-menu">
+<div class="container-fluid">
+
+<div class="logo_gov">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/45/Government_of_Rajasthan_logo.png">
+RPG Department
+</div>
+
+<button class="navbar-toggler text-white" data-bs-toggle="collapse" data-bs-target="#mainNav">
+☰ Menu
+</button>
+
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav mx-auto">
+
+<!-- Home -->
+<li class="nav-item">
+<a class="nav-link" href="/"><i class="bi bi-house-fill"></i></a>
+</li>
+
+<!-- About -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle">About</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/about/department">About Department</a></li>
+<li><a class="dropdown-item" href="/about/mission-vision">Mission & Vision</a></li>
+<li><a class="dropdown-item" href="/about/organization-structure">Organizational Structure</a></li>
+<li><a class="dropdown-item" href="/about/roles-responsibilities">Roles & Responsibilities</a></li>
+<li><a class="dropdown-item" href="/about/officer-directory">Officer Directory</a></li>
+<li><a class="dropdown-item" href="/about/citizen-charter">Citizen Charter</a></li>
+</ul>
+</li>
+
+<!-- Acts -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle">Acts & Rules</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/acts-rules/rgpds-2011">RGPDS Act 2011</a></li>
+<li><a class="dropdown-item" href="/acts-rules/rth-2012">RTH Act 2012</a></li>
+<li><a class="dropdown-item" href="/acts-rules/amendments">Amendments</a></li>
+</ul>
+</li>
+
+<!-- Notifications -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle">Notifications</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/notifications/orders">Orders</a></li>
+<li><a class="dropdown-item" href="/notifications/circulars">Circulars</a></li>
+<li><a class="dropdown-item" href="/notifications/press-notes">Press Notes</a></li>
+<li><a class="dropdown-item" href="/notifications/tenders">Tenders</a></li>
+</ul>
+</li>
+
+<!-- Grievance -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle">Grievance Redressal</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/grievance-redressal/mechanism">Mechanism</a></li>
+<li><a class="dropdown-item" target="_blank">Register / Track (Sampark)</a></li>
+<li><a class="dropdown-item" href="/grievance-redressal/jansunwai">Jansunwai</a></li>
+<li><a class="dropdown-item" href="/grievance-redressal/success-stories">Success Stories</a></li>
+<li><a class="dropdown-item" target="_blank">CPGRAMS</a></li>
+<li><a class="dropdown-item" href="/grievance-redressal/faq">FAQ</a></li>
+</ul>
+</li>
+
+<!-- Reports -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle">Reports</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/reports/sampark-monthly">Sampark Monthly</a></li>
+<li><a class="dropdown-item" href="/reports/annual">Annual Report</a></li>
+</ul>
+</li>
+
+<!-- RTI -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle">RTI</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="/rti/overview">RTI Overview</a></li>
+<li><a class="dropdown-item" href="/rti/pio-details">PIO & Appellate Authority</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- BANNER -->
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active"><img src="https://picsum.photos/1600/450?1" class="w-100"></div>
+<div class="carousel-item"><img src="https://picsum.photos/1600/450?2" class="w-100"></div>
+</div>
+
+<div class="banner-text">
+<h4>Redressal of Public Grievances</h4>
+<p>Transparent • Responsive • Citizen Centric</p>
+</div>
+</div>
+
+<!-- QUICK BLOCKS -->
+<div class="container my-5">
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="quick-card">
+<h6>📢 Latest Updates</h6>
+<ul class="small">
+<li>Order dated 05-02-2026</li>
+<li>Circular on district review</li>
+<li>Sampark Monthly Report</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="quick-card" id="stats"></div>
+</div>
+
+<div class="col-md-3">
+<div class="quick-card">
+<h6>🌟 Success Stories</h6>
+<div id="storyCarousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active"><img src="https://picsum.photos/250/150?3" class="w-100"></div>
+<div class="carousel-item"><img src="https://picsum.photos/250/150?4" class="w-100"></div>
+<div class="carousel-item"><img src="https://picsum.photos/250/150?5" class="w-100"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="quick-card">
+<h6>📄 Acts & Rules</h6>
+<ul class="small">
+<li>RGPDS Act 2011</li>
+<li>RTH Act 2012</li>
+<li>Latest Amendments</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+<footer>
+<div class="container text-center">
+© Government of Rajasthan
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const stats=[
+{r:12540,res:11230,sat:89,days:6,dept:"Revenue",dist:"Jaipur"},
+{r:13120,res:12005,sat:91,days:5,dept:"UDH",dist:"Jodhpur"},
+{r:11800,res:10400,sat:87,days:7,dept:"Education",dist:"Kota"}
+];
+
+let i=0;
+function rotate(){
+document.getElementById("stats").innerHTML=
+`<h6>📊 Sampark Portal</h6>
+Registered: ${stats[i].r}<br>
+Resolved: ${stats[i].res}<br>
+Satisfaction: ${stats[i].sat}%<br>
+Avg Days: ${stats[i].days}<hr>
+Dept: ${stats[i].dept}<br>
+District: ${stats[i].dist}`;
+i=(i+1)%stats.length;
+}
+rotate();
+setInterval(rotate,4000);
+</script>
+
+</body>
+</html>
